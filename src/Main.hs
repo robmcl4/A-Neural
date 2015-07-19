@@ -1,2 +1,13 @@
+import ImageLoader
+
+--------------------------------------------------------------------------------
+
+import Control.Exception
+
+--------------------------------------------------------------------------------
+
 main = do
-  putStrLn "Hello, World"
+  dat <- loadNonExamples
+  case dat
+    of Left (SomeException e) -> putStrLn $ show e
+       Right _                -> putStrLn "Got them!"
