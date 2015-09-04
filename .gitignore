@@ -2,3 +2,5 @@ cabal.sandbox.config
 .cabal-sandbox/
 dist/
 .DS_Store
+src/res/A
+src/res/not-A
